@@ -11,11 +11,15 @@ Find a free TCP-port
 
 # Usage
 
-
-
-# API
-
-
+    import freeport from "freeport-es6";
+    async function getPort(){
+        try{
+            const port = await freeport();
+            console.log(port);
+        }catch(e){
+            console.error(e);
+        }
+    }
 
 # Test
 
