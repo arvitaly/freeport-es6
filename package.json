@@ -1,0 +1,32 @@
+{
+  "name": "freeport-es6",
+  "version": "0.0.1",
+  "description": "Find a free TCP-port",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && tslint --project=tsconfig.json && jest --verbose --coverage",
+    "watch:test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvitaly/freeport-es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvitaly/freeport-es6/issues"
+  },
+  "homepage": "https://github.com/arvitaly/freeport-es6#readme",
+  "jest": {},
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "coveralls": "^2.13.0",
+    "jest": "^19.0.2",
+    "tslint": "^5.0.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^7.0.12"
+  }
+}
