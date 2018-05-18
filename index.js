@@ -14,7 +14,8 @@ exports.default = () => __awaiter(this, void 0, void 0, function* () {
         const server = net_1.createServer();
         let port;
         server.once("listening", () => {
-            port = server.address().port;
+            const address = server.address();
+            port = address.port;
             server.close();
         });
         server.once("close", () => {

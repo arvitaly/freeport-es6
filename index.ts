@@ -1,10 +1,11 @@
-import { createServer } from "net";
+import { AddressInfo, createServer } from "net";
 export default async () => {
     return new Promise<number>((resolve, reject) => {
         const server = createServer();
         let port: number;
         server.once("listening", () => {
-            port = server.address().port;
+            const address = server.address() as AddressInfo;
+            port = address.port;
             server.close();
         });
         server.once("close", () => {
