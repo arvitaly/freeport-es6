@@ -1,6 +1,6 @@
 {
   "name": "freeport-es6",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Find a free TCP-port",
   "main": "index.js",
   "scripts": {
