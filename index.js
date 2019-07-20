@@ -19,7 +19,7 @@ exports.default = () => __awaiter(this, void 0, void 0, function* () {
             server.close();
         });
         server.once("close", () => {
-            if (typeof (port) === "undefined") {
+            if (typeof port === "undefined") {
                 reject("Can't get port");
                 return;
             }
